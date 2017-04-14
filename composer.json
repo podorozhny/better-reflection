@@ -1,0 +1,35 @@
+{
+    "name": "podorozhny/better-reflection",
+    "license": "MIT",
+    "require": {
+        "php": "7.0.*|7.1.*",
+        "nikic/php-parser": "^3.0.2",
+        "phpdocumentor/reflection-docblock": "^3.1.1",
+        "phpdocumentor/type-resolver": "^0.2.1",
+        "zendframework/zend-code": "^3.1",
+        "jeremeamia/superclosure": "^2.3",
+        "roave/signature": "^1.0"
+    },
+    "require-dev": {
+        "friendsofphp/php-cs-fixer": "^1.13.1",
+        "phpunit/phpunit": "^5.7.4"
+    },
+    "autoload": {
+        "psr-4": {
+            "Roave\\BetterReflection\\": "src"
+        },
+        "files": [
+            "namespace-bc-aliases.php"
+        ]
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "Roave\\BetterReflectionTest\\": "test/unit"
+        }
+    },
+    "suggest": {
+        "composer/composer": "Required to use the ComposerSourceLocator"
+    },
+    "minimum-stability": "dev",
+    "prefer-stable": true
+}
